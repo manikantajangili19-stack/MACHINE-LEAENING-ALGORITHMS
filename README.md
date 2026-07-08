@@ -4,7 +4,7 @@ Machine Learning Algorithms
 
 This repository contains implementations and practice notebooks for core machine learning algorithms using Python and scikit-learn. It is built to strengthen understanding of regression, classification, clustering, preprocessing, and model evaluation.
 
-Algorithms Covered
+Algorithms covered
 
 Linear Regression
 
