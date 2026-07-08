@@ -1,0 +1,261 @@
+NUMPY 
+
+Do it in this order:
+-------------------------------------------------------
+Part A — NumPy first
+What is NumPy and why use it
+Arrays
+Shape, dimensions, size
+Indexing and slicing
+Reshape
+Broadcasting
+Vectorized operations
+Aggregation functions
+Random module
+Matrix basics
+----------------------------------------------
+
+NumPy Module 1:
+ What is NumPy?
+Why NumPy exists
+
+Python lists are flexible, but for numerical data they are slower and less convenient.
+
+NumPy gives:
+
+faster operations
+easy mathematical calculations
+multi-dimensional arrays
+support for matrix-like computations
+base for Pandas, scikit-learn, ML libraries
+======================================================================================================
+NumPy Module 2: 
+Arrays
+======================================
+Learn
+creating 1D arrays
+creating 2D arrays
+array from list
+array datatype
+zeros, ones, arange, linspace
+Core concepts
+1D array = like a row of values
+2D array = like a table/matrix
+each array has:
+shape
+size
+datatype
+
+Practice
+
+Create:
+
+marks of 5 students
+3x3 matrix
+array of numbers 1 to 20
+array of 10 zeros
+array of 5 ones
+================================================================================================================
+                                        NumPy Module 3: Shape, Size, Dimensions
+Learn:-
+=======
+arr.shape
+arr.ndim
+arr.size
+arr.dtype
+Must understand
+
+If:
+arr = np.array([[1,2,3],[4,5,6]])
+
+Then:
+
+shape = (2, 3) → 2 rows, 3 columns
+ndim = 2
+size = 6
+
+Practice:-
+
+Take 1D, 2D, 3D arrays and find:
+
+shape
+number of rows/columns
+total elements
+========================================================================================================================
+                                                  NumPy Module 4: Indexing and Slicing
+Learn
+1D array
+arr[0]
+arr[-1]
+arr[1:4]
+
+2D array
+arr[row, col]
+arr[:, 1]
+arr[0:2, 1:3]
+
+Why important
+
+
+This is how you extract:
+
+specific values
+rows
+columns
+subsets of data
+
+Practice
+
+From a 2D array:
+
+get first row
+get last column
+get center values
+get first 2 rows and first 2 columns
+======================================================================================================
+
+NumPy Module 5: Reshape
+====================================================================================================
+Learn
+reshape()
+flattening
+converting 1D → 2D
+converting 2D → 1D
+
+
+arr = np.array([1,2,3,4,5,6])
+arr.reshape(2,3)
+
+output:
+    [[1,2,3],
+ [4,5,6]]
+
+Must understand
+
+If total elements = 12, reshape must still use 12 elements:
+
+(3,4) valid
+(2,6) valid
+(5,2) invalid
+========================================================================================================================
+                                                              NumPy Module 6: Broadcasting
+Learn
+
+Broadcasting means NumPy can do operations between arrays of different shapes when compatible.
+
+Examples
+add a number to every element
+add one row vector to each row
+multiply every value by 10
+
+arr + 5
+arr * 2
+
+Why important
+
+You avoid loops and write fast code.
+====================================================================================================================================
+                                                                  Module 7: Vectorized Operations
+Learn
+
+Operations done on full arrays directly:
+
+addition
+subtraction
+multiplication
+division
+power
+comparison
+
+arr + 10
+arr * 2
+arr > 5
+
+Why important
+
+This is the NumPy style of coding:
+
+shorter
+faster
+cleaner than loops
+==========================================================================================================================================================
+
+                                                                 NumPy Module 8: Aggregation Functions
+Learn
+sum()
+mean()
+min()
+max()
+std()
+var()
+axis concept
+Must understand axis
+
+For 2D arrays:
+
+axis=0 → column-wise
+axis=1 → row-wise
+
+arr.sum(axis=0)   # sum of each column
+arr.sum(axis=1)   # sum of each row
+
+Practice
+
+For student marks matrix:
+
+total marks of each student
+total marks of each subject
+highest mark
+average mark
+==============================================================================================================================================
+                                                          NumPy Module 9: Random Module
+Learn
+np.random.rand()
+np.random.randint()
+np.random.randn()
+np.random.seed()
+
+Why important
+
+Used for:
+
+creating sample datasets
+testing code
+ML experiments
+Practice
+
+Generate:
+
+10 random integers between 1 and 100
+5x3 random matrix
+reproducible random numbers using seed
+================================================================================================================================================================
+                                                                    NumPy Module 10: Matrix Basics
+Learn:-
+
+matrix addition
+subtraction
+multiplication (element-wise)
+matrix multiplication
+transpose
+
+Important distinction
+
+Element-wise multiplication
+A * B
+
+Matrix multiplication
+A @ B     (or)    np.dot(A, B)
+
+Why important
+
+Many ML algorithms use matrix operations internally.
+
+
+
+
+
+
+
+
+
